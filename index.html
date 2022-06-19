@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>PokeDex</title>
+</head>
+<body class="redGUI">
+    <main >     
+        <div class="container row redGUI d-flex flex-row ">
+            <div class="col-5 scrollable content info">
+                <ul class="list-group info d-flex" style="width: 100%;" id="pokemonList" >
+                </ul>             
+            </div>
+            <div class="col bg-light content">
+                <div class="row d-flex flex-row" id="data">
+                    <div class="bg-light d-flex flex-row-reverse info">                        
+                        <div class="p-2">
+                            <img src="images/delete.png" alt="pokemon delete" id="deletePokemon">
+                        </div>
+                        <div class="p-2">
+                            <img  src="images/search.png" alt="pokemon search" id="searchPokemon">
+                        </div>
+                        <div class="p-2">
+                            <input type="text" id="pokemonName" placeholder="Pokemon name or ID">
+                        </div>
+                            
+                    </div>
+                    <div class="row container" style="border-style: none none solid none; border-width: 2px; border-color: red;">
+                        <div class="container col info">
+                            <div class="container row">
+                                <img id="pkImg">
+                            </div>
+                            <div class="container row info" style="font-size: 1.2em; text-align: center; font-weight:bold">
+                                <p id="pkName"> None </p>
+                            </div>
+                            <div class="row info" id="pkData">
+                                <p style="font-size: 0.9em; text-align: center;" > data not founded</p>
+                            </div>
+                        </div>
+                        <div class="container col info">
+                            <h2>Information</h2>
+                            <div class="row info">
+                                <div class="row info">
+                                    <p class="col info pInfo"> Weight: </p>
+                                    <p class="col info" id="pkW"> NoneW</p>
+                                </div>
+                            </div>
+                            <div class="row info">
+                                <div class="row info">
+                                    <p class="col pInfo"> Height: </p>
+                                    <p class="col" id="pkH"> NoneH</p>
+                                </div>
+                            </div>
+                            <div class="row info">
+                                <div class="row info">
+                                    <p class="col info pInfo"> Egg Group: </p>
+                                    <p class="col info" id="pkEgGr"> NoneEG</p>
+                                </div>
+                            </div>
+                            <div class="row info">
+                                <div class="row info">
+                                    <p class="col info pInfo"> Abilities: </p>
+                                    <p class="col info" id="pkAbt"> NoneA</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row container d-flex" id="evol">
+                        evolution phase
+                    </div>
+                    </div>
+                    
+            </div>
+        </div>
+            
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
